@@ -1,0 +1,1913 @@
+
+./app/Main.hs,255
+module Main Main0,1
+echoPort echoPort8,9
+maxline maxline9,10
+main main11,12
+main main12,13
+child child17,18
+child child18,19
+echoserver echoserver29,30
+echoserver echoserver30,31
+socketEcho socketEcho36,37
+socketEcho socketEcho37,38
+
+./src/Lib.hs,65
+module LibLib0,1
+someFunc someFunc4,5
+someFunc someFunc5,6
+
+./network-2.6.2.1/examples/EchoClient.hs,52
+module Main Main1,2
+main main7,8
+main main8,9
+
+./network-2.6.2.1/examples/EchoServer.hs,53
+module Main Main1,2
+main main8,9
+main main9,10
+
+./network-2.6.2.1/Network/Socket.hsc,6904
+module Network.SocketNetwork.Socket26,27
+type HostName HostName219,220
+type ServiceName ServiceName220,221
+socket2FD socket2FD246,247
+mkSocket mkSocket251,252
+mkSocket mkSocket257,258
+fdSocket fdSocket263,264
+fdSocket fdSocket264,265
+defaultProtocol defaultProtocol267,268
+defaultProtocol defaultProtocol268,269
+instance instance273,274
+socket socket307,308
+socket socket311,312
+socketPair socketPair336,337
+socketPair socketPair340,341
+setNonBlockIfNeeded setNonBlockIfNeeded361,362
+setNonBlockIfNeeded setNonBlockIfNeeded362,363
+bind bind373,374
+bind bind376,377
+connect connect391,392
+connect connect394,395
+listen listen435,436
+listen listen438,439
+accept accept462,463
+accept accept466,467
+sendTo sendTo538,539
+sendTo sendTo542,543
+sendBufTo sendBufTo550,551
+sendBufTo sendBufTo554,555
+recvFrom recvFrom569,570
+recvFrom recvFrom570,571
+recvBufFrom recvBufFrom584,585
+recvBufFrom recvBufFrom585,586
+send send615,616
+send send618,619
+sendBuf sendBuf636,637
+sendBuf sendBuf640,641
+recv recv666,667
+recv recv667,668
+recvLen recvLen669,670
+recvLen recvLen670,671
+recvBuf recvBuf700,701
+recvBuf recvBuf701,702
+recvLenBuf recvLenBuf703,704
+recvLenBuf recvLenBuf704,705
+socketPort socketPort728,729
+socketPort socketPort730,731
+getPeerName getPeerName751,752
+getPeerName getPeerName752,753
+getSocketName getSocketName759,760
+getSocketName getSocketName760,761
+data SocketOptionSocketOption773,774
+    = Debug Debug774,775
+    | ReuseAddr ReuseAddr775,776
+    | Type Type776,777
+    | SoError SoError777,778
+    | DontRoute DontRoute778,779
+    | Broadcast Broadcast779,780
+    | SendBuffer SendBuffer780,781
+    | RecvBuffer RecvBuffer781,782
+    | KeepAlive KeepAlive782,783
+    | OOBInline OOBInline783,784
+    | TimeToLive TimeToLive784,785
+    | MaxSegment MaxSegment785,786
+    | NoDelay NoDelay786,787
+    | Cork Cork787,788
+    | Linger Linger788,789
+    | ReusePort ReusePort789,790
+    | RecvLowWater RecvLowWater790,791
+    | SendLowWater SendLowWater791,792
+    | RecvTimeOut RecvTimeOut792,793
+    | SendTimeOut SendTimeOut793,794
+    | UseLoopBack UseLoopBack794,795
+    | UserTimeout UserTimeout795,796
+    | IPv6Only IPv6Only796,797
+    | CustomSockOpt CustomSockOpt797,798
+isSupportedSocketOption isSupportedSocketOption801,802
+isSupportedSocketOption isSupportedSocketOption802,803
+packSocketOption packSocketOption808,809
+packSocketOption packSocketOption809,810
+packSocketOption' packSocketOption'903,904
+packSocketOption' packSocketOption'904,905
+setSocketOption setSocketOption911,912
+setSocketOption setSocketOption915,916
+getSocketOption getSocketOption926,927
+getSocketOption getSocketOption929,930
+getPeerCred getPeerCred944,945
+getPeerCred getPeerCred945,946
+getPeerEid getPeerEid966,967
+getPeerEid getPeerEid967,968
+closeFdWith closeFdWith980,981
+sendFd sendFd986,987
+sendFd sendFd987,988
+recvFd recvFd994,995
+recvFd recvFd995,996
+aNY_PORT aNY_PORT1008,1009
+aNY_PORT aNY_PORT1009,1010
+iNADDR_ANY iNADDR_ANY1013,1014
+iNADDR_ANY iNADDR_ANY1014,1015
+iN6ADDR_ANY iN6ADDR_ANY1021,1022
+iN6ADDR_ANY iN6ADDR_ANY1022,1023
+sOMAXCONN sOMAXCONN1025,1026
+sOMAXCONN sOMAXCONN1026,1027
+sOL_SOCKET sOL_SOCKET1028,1029
+sOL_SOCKET sOL_SOCKET1029,1030
+sCM_RIGHTS sCM_RIGHTS1032,1033
+sCM_RIGHTS sCM_RIGHTS1033,1034
+maxListenQueue maxListenQueue1039,1040
+maxListenQueue maxListenQueue1040,1041
+data ShutdownCmdShutdownCmd1044,1045
+ = ShutdownReceiveShutdownReceive1045,1046
+ | ShutdownSendShutdownSend1046,1047
+ | ShutdownBothShutdownBoth1047,1048
+sdownCmdToInt sdownCmdToInt1050,1051
+sdownCmdToInt sdownCmdToInt1051,1052
+shutdown shutdown1060,1061
+shutdown shutdown1061,1062
+close close1070,1071
+close close1071,1072
+isConnected isConnected1086,1087
+isConnected isConnected1087,1088
+isBound isBound1094,1095
+isBound isBound1095,1096
+isListening isListening1099,1100
+isListening isListening1100,1101
+isReadable isReadable1104,1105
+isReadable isReadable1105,1106
+isWritable isWritable1109,1110
+isWritable isWritable1110,1111
+isAcceptable isAcceptable1112,1113
+isAcceptable isAcceptable1114,1115
+inet_addr inet_addr1127,1128
+inet_addr inet_addr1128,1129
+inet_ntoa inet_ntoa1135,1136
+inet_ntoa inet_ntoa1136,1137
+socketToHandle socketToHandle1149,1150
+socketToHandle socketToHandle1150,1151
+packBits packBits1164,1165
+packBits packBits1166,1167
+unpackBits unpackBits1172,1173
+unpackBits unpackBits1177,1178
+data AddrInfoFlagAddrInfoFlag1188,1189
+    = AI_ADDRCONFIGAI_ADDRCONFIG1189,1190
+    | AI_ALLAI_ALL1190,1191
+    | AI_CANONNAMEAI_CANONNAME1191,1192
+    | AI_NUMERICHOSTAI_NUMERICHOST1192,1193
+    | AI_NUMERICSERVAI_NUMERICSERV1193,1194
+    | AI_PASSIVEAI_PASSIVE1194,1195
+    | AI_V4MAPPEDAI_V4MAPPED1195,1196
+aiFlagMapping aiFlagMapping1198,1199
+aiFlagMapping aiFlagMapping1200,1201
+addrInfoFlagImplemented addrInfoFlagImplemented1229,1230
+addrInfoFlagImplemented addrInfoFlagImplemented1230,1231
+data AddrInfo AddrInfo1232,1233
+    AddrInfo AddrInfo1233,1234
+        addrFlags addrFlags1234,1235
+        addrFamily addrFamily1235,1236
+        addrSocketType addrSocketType1236,1237
+        addrProtocol addrProtocol1237,1238
+        addrAddress addrAddress1238,1239
+        addrCanonName addrCanonName1239,1240
+data NameInfoFlagNameInfoFlag1285,1286
+    = NI_DGRAMNI_DGRAM1286,1287
+    | NI_NAMEREQDNI_NAMEREQD1287,1288
+    | NI_NOFQDNNI_NOFQDN1288,1289
+    | NI_NUMERICHOSTNI_NUMERICHOST1289,1290
+    | NI_NUMERICSERVNI_NUMERICSERV1290,1291
+niFlagMapping niFlagMapping1293,1294
+niFlagMapping niFlagMapping1295,1296
+defaultHints defaultHints1305,1306
+defaultHints defaultHints1307,1308
+getAddrInfo getAddrInfo1399,1400
+getAddrInfo getAddrInfo1404,1405
+followAddrInfo followAddrInfo1431,1432
+followAddrInfo followAddrInfo1433,1434
+gai_strerror gai_strerror1446,1447
+gai_strerror gai_strerror1449,1450
+withCStringIf withCStringIf1457,1458
+withCStringIf withCStringIf1458,1459
+getNameInfo getNameInfo1503,1504
+getNameInfo getNameInfo1509,1510
+mkInvalidRecvArgError mkInvalidRecvArgError1533,1534
+mkInvalidRecvArgError mkInvalidRecvArgError1534,1535
+mkEOFError mkEOFError1538,1539
+mkEOFError mkEOFError1539,1540
+closeFd closeFd1553,1554
+closeFd closeFd1554,1555
+bindSocket bindSocket1617,1618
+bindSocket bindSocket1620,1621
+sClose sClose1623,1624
+sClose sClose1624,1625
+sIsConnected sIsConnected1627,1628
+sIsConnected sIsConnected1628,1629
+sIsBound sIsBound1631,1632
+sIsBound sIsBound1632,1633
+sIsListening sIsListening1635,1636
+sIsListening sIsListening1636,1637
+sIsReadable sIsReadable1639,1640
+sIsReadable sIsReadable1640,1641
+sIsWritable sIsWritable1643,1644
+sIsWritable sIsWritable1644,1645
+
+./network-2.6.2.1/Network/Socket/Internal.hsc,929
+module Network.Socket.InternalNetwork.Socket.Internal22,23
+throwSocketError throwSocketError98,99
+throwSocketErrorCode throwSocketErrorCode104,105
+throwSocketErrorIfMinus1Retry_ throwSocketErrorIfMinus1Retry_137,138
+throwSocketErrorIfMinus1RetryMayBlock throwSocketErrorIfMinus1RetryMayBlock158,159
+throwSocketErrorIfMinus1Retry throwSocketErrorIfMinus1Retry161,162
+throwSocketErrorIfMinus1_ throwSocketErrorIfMinus1_163,164
+throwSocketError throwSocketError165,166
+throwSocketErrorCode throwSocketErrorCode167,168
+throwSocketErrorWaitRead throwSocketErrorWaitRead221,222
+throwSocketErrorWaitRead throwSocketErrorWaitRead222,223
+throwSocketErrorWaitWrite throwSocketErrorWaitWrite230,231
+throwSocketErrorWaitWrite throwSocketErrorWaitWrite231,232
+withSocketsDo withSocketsDo254,255
+withSocketsDo withSocketsDo256,257
+withSocketsInit withSocketsInit262,263
+withSocketsInit withSocketsInit264,265
+
+./network-2.6.2.1/Network/Socket/Types.hsc,5490
+module Network.Socket.TypesNetwork.Socket.Types6,7
+data SocketSocket80,81
+  = MkSocketMkSocket81,82
+sockFd sockFd89,90
+sockFd sockFd90,91
+sockFamily sockFamily92,93
+sockFamily sockFamily93,94
+sockType sockType95,96
+sockType sockType96,97
+sockProtocol sockProtocol98,99
+sockProtocol sockProtocol99,100
+sockStatus sockStatus101,102
+sockStatus sockStatus102,103
+instance instance104,105
+type ProtocolNumber ProtocolNumber111,112
+data SocketStatusSocketStatus118,119
+  = NotConnected NotConnected120,121
+  | Bound Bound121,122
+  | Listening Listening122,123
+  | Connected Connected123,124
+  | ConvertedToHandle ConvertedToHandle124,125
+  | Closed Closed125,126
+data SocketTypeSocketType149,150
+        = NoSocketType NoSocketType150,151
+        | Stream Stream151,152
+        | Datagram Datagram152,153
+        | Raw Raw153,154
+        | RDM RDM154,155
+        | SeqPacket SeqPacket155,156
+isSupportedSocketType isSupportedSocketType160,161
+isSupportedSocketType isSupportedSocketType161,162
+packSocketType' packSocketType'164,165
+packSocketType' packSocketType'165,166
+packSocketType packSocketType186,187
+packSocketType packSocketType187,188
+packSocketTypeOrThrow packSocketTypeOrThrow194,195
+packSocketTypeOrThrow packSocketTypeOrThrow195,196
+unpackSocketType:unpackSocketType201,202
+unpackSocketType unpackSocketType202,203
+unpackSocketType' unpackSocketType'223,224
+unpackSocketType' unpackSocketType'224,225
+data FamilyFamily236,237
+    = AF_UNSPEC AF_UNSPEC237,238
+    | AF_UNIX AF_UNIX238,239
+    | AF_INET AF_INET239,240
+    | AF_INET6 AF_INET6240,241
+    | AF_IMPLINK AF_IMPLINK241,242
+    | AF_PUP AF_PUP242,243
+    | AF_CHAOS AF_CHAOS243,244
+    | AF_NS AF_NS244,245
+    | AF_NBS AF_NBS245,246
+    | AF_ECMA AF_ECMA246,247
+    | AF_DATAKIT AF_DATAKIT247,248
+    | AF_CCITT AF_CCITT248,249
+    | AF_SNA AF_SNA249,250
+    | AF_DECnet AF_DECnet250,251
+    | AF_DLI AF_DLI251,252
+    | AF_LAT AF_LAT252,253
+    | AF_HYLINK AF_HYLINK253,254
+    | AF_APPLETALK AF_APPLETALK254,255
+    | AF_ROUTE AF_ROUTE255,256
+    | AF_NETBIOS AF_NETBIOS256,257
+    | AF_NIT AF_NIT257,258
+    | AF_802 AF_802258,259
+    | AF_ISO AF_ISO259,260
+    | AF_OSI AF_OSI260,261
+    | AF_NETMAN AF_NETMAN261,262
+    | AF_X25 AF_X25262,263
+    | AF_AX25AF_AX25263,264
+    | AF_OSINET AF_OSINET264,265
+    | AF_GOSSIP AF_GOSSIP265,266
+    | AF_IPX AF_IPX266,267
+    | Pseudo_AF_XTP Pseudo_AF_XTP267,268
+    | AF_CTF AF_CTF268,269
+    | AF_WAN AF_WAN269,270
+    | AF_SDL AF_SDL270,271
+    | AF_NETWAREAF_NETWARE271,272
+    | AF_NDDAF_NDD272,273
+    | AF_INTF AF_INTF273,274
+    | AF_COIP AF_COIP274,275
+    | AF_CNT AF_CNT275,276
+    | Pseudo_AF_RTIP Pseudo_AF_RTIP276,277
+    | Pseudo_AF_PIP Pseudo_AF_PIP277,278
+    | AF_SIP AF_SIP278,279
+    | AF_ISDN AF_ISDN279,280
+    | Pseudo_AF_KEY Pseudo_AF_KEY280,281
+    | AF_NATM AF_NATM281,282
+    | AF_ARP AF_ARP282,283
+    | Pseudo_AF_HDRCMPLT Pseudo_AF_HDRCMPLT283,284
+    | AF_ENCAPAF_ENCAP284,285
+    | AF_LINK AF_LINK285,286
+    | AF_RAW AF_RAW286,287
+    | AF_RIF AF_RIF287,288
+    | AF_NETROM AF_NETROM288,289
+    | AF_BRIDGE AF_BRIDGE289,290
+    | AF_ATMPVC AF_ATMPVC290,291
+    | AF_ROSE AF_ROSE291,292
+    | AF_NETBEUI AF_NETBEUI292,293
+    | AF_SECURITY AF_SECURITY293,294
+    | AF_PACKET AF_PACKET294,295
+    | AF_ASH AF_ASH295,296
+    | AF_ECONET AF_ECONET296,297
+    | AF_ATMSVC AF_ATMSVC297,298
+    | AF_IRDA AF_IRDA298,299
+    | AF_PPPOX AF_PPPOX299,300
+    | AF_WANPIPE AF_WANPIPE300,301
+    | AF_BLUETOOTH AF_BLUETOOTH301,302
+    | AF_CAN AF_CAN302,303
+packFamily packFamily305,306
+packFamily packFamily306,307
+isSupportedFamily isSupportedFamily314,315
+isSupportedFamily isSupportedFamily315,316
+packFamily' packFamily'317,318
+packFamily' packFamily'318,319
+unpackFamily unpackFamily521,522
+unpackFamily unpackFamily522,523
+newtype PortNumber PortNumber731,732
+newtype PortNumber = PortNum PortNum731,732
+intToPortNumber intToPortNumber741,742
+intToPortNumber intToPortNumber742,743
+portNumberToInt portNumberToInt744,745
+portNumberToInt portNumberToInt745,746
+type FlowInfo FlowInfo800,801
+type ScopeID ScopeID801,802
+data SockAddr SockAddr807,808
+  = SockAddrInetSockAddrInet808,809
+  | SockAddrInet6SockAddrInet6811,812
+  | SockAddrUnixSockAddrUnix816,817
+  | SockAddrCanSockAddrCan818,819
+isSupportedSockAddr isSupportedSockAddr824,825
+isSupportedSockAddr isSupportedSockAddr825,826
+type CSaFamily CSaFamily839,840
+type CSaFamily CSaFamily841,842
+type CSaFamily CSaFamily843,844
+sizeOfSockAddr sizeOfSockAddr849,850
+sizeOfSockAddr sizeOfSockAddr851,852
+sizeOfSockAddrByFamily sizeOfSockAddrByFamily866,867
+sizeOfSockAddrByFamily sizeOfSockAddrByFamily868,869
+withSockAddr withSockAddr880,881
+withSockAddr withSockAddr881,882
+withNewSockAddr withNewSockAddr887,888
+withNewSockAddr withNewSockAddr888,889
+pokeSockAddr pokeSockAddr900,901
+pokeSockAddr pokeSockAddr902,903
+peekSockAddr peekSockAddr947,948
+peekSockAddr peekSockAddr948,949
+type HostAddress HostAddress977,978
+type HostAddress6 HostAddress6981,982
+s6_addr_offset s6_addr_offset987,988
+s6_addr_offset s6_addr_offset988,989
+peek32 peek32990,991
+peek32 peek32991,992
+poke32 poke321001,1002
+poke32 poke321002,1003
+zeroMemory zeroMemory1035,1036
+zeroMemory zeroMemory1036,1037
+
+./network-2.6.2.1/Network/Socket/ByteString.hsc,725
+module Network.Socket.ByteStringNetwork.Socket.ByteString24,25
+send send90,91
+send send93,94
+sendAll sendAll109,110
+sendAll sendAll112,113
+sendTo sendTo120,121
+sendTo sendTo124,125
+sendAllTo sendAllTo133,134
+sendAllTo sendAllTo137,138
+sendMany sendMany169,170
+sendMany sendMany173,174
+sendManyTo sendManyTo192,193
+sendManyTo sendManyTo197,198
+recv recv228,229
+recv recv231,232
+recvInner recvInner235,236
+recvInner recvInner236,237
+recvFrom recvFrom251,252
+recvFrom recvFrom254,255
+remainingChunks remainingChunks267,268
+remainingChunks remainingChunks268,269
+totalLength totalLength276,277
+totalLength totalLength277,278
+withIOVec withIOVec283,284
+withIOVec withIOVec284,285
+
+./network-2.6.2.1/Network/Socket/ByteString/Lazy/Windows.hs,169
+module Network.Socket.ByteString.Lazy.WindowsNetwork.Socket.ByteString.Lazy.Windows1,2
+send send20,21
+send send23,24
+sendAll sendAll29,30
+sendAll sendAll32,33
+
+./network-2.6.2.1/Network/Socket/ByteString/Lazy/Posix.hs,165
+module Network.Socket.ByteString.Lazy.PosixNetwork.Socket.ByteString.Lazy.Posix1,2
+send send26,27
+send send29,30
+sendAll sendAll49,50
+sendAll sendAll52,53
+
+./network-2.6.2.1/Network/Socket/ByteString/IOVec.hsc,211
+module Network.Socket.ByteString.IOVecNetwork.Socket.ByteString.IOVec3,4
+data IOVec IOVec14,15
+data IOVec = IOVecIOVec14,15
+    { iovBase iovBase15,16
+    , iovLen iovLen16,17
+instance instance19,20
+
+./network-2.6.2.1/Network/Socket/ByteString/MsgHdr.hsc,286
+module Network.Socket.ByteString.MsgHdrNetwork.Socket.ByteString.MsgHdr4,5
+data MsgHdr MsgHdr21,22
+data MsgHdr = MsgHdrMsgHdr21,22
+    { msgName msgName22,23
+    , msgNameLen msgNameLen23,24
+    , msgIov msgIov24,25
+    , msgIovLen msgIovLen25,26
+instance instance28,29
+
+./network-2.6.2.1/Network/Socket/ByteString/Internal.hs,185
+module Network.Socket.ByteString.InternalNetwork.Socket.ByteString.Internal11,12
+mkInvalidRecvArgError mkInvalidRecvArgError33,34
+mkInvalidRecvArgError mkInvalidRecvArgError34,35
+
+./network-2.6.2.1/Network/Socket/ByteString/Lazy.hs,171
+module Network.Socket.ByteString.LazyNetwork.Socket.ByteString.Lazy23,24
+getContents getContents63,64
+getContents getContents65,66
+recv recv79,80
+recv recv82,83
+
+./network-2.6.2.1/Network/BSD.hsc,3728
+module Network.BSDNetwork.BSD18,19
+type ProtocolName ProtocolName122,123
+data ServiceEntry ServiceEntry138,139
+  ServiceEntry ServiceEntry139,140
+     serviceName serviceName140,141
+     serviceAliases serviceAliases141,142
+     servicePort servicePort142,143
+     serviceProtocol serviceProtocol143,144
+instance instance146,147
+getServiceByName getServiceByName174,175
+getServiceByName getServiceByName177,178
+getServiceByPort getServiceByPort188,189
+getServiceByPort getServiceByPort189,190
+getServicePortNumber getServicePortNumber199,200
+getServicePortNumber getServicePortNumber200,201
+getServiceEntry getServiceEntry205,206
+getServiceEntry getServiceEntry206,207
+setServiceEntry setServiceEntry213,214
+setServiceEntry setServiceEntry214,215
+endServiceEntry endServiceEntry218,219
+endServiceEntry endServiceEntry219,220
+getServiceEntries getServiceEntries223,224
+getServiceEntries getServiceEntries224,225
+data ProtocolEntry ProtocolEntry241,242
+  ProtocolEntry ProtocolEntry242,243
+     protoName protoName243,244
+     protoAliases protoAliases244,245
+     protoNumber protoNumber245,246
+getProtocolByName getProtocolByName274,275
+getProtocolByName getProtocolByName275,276
+getProtocolByNumber getProtocolByNumber285,286
+getProtocolByNumber getProtocolByNumber286,287
+getProtocolNumber getProtocolNumber295,296
+getProtocolNumber getProtocolNumber296,297
+getProtocolEntry getProtocolEntry301,302
+getProtocolEntry getProtocolEntry302,303
+setProtocolEntry setProtocolEntry309,310
+setProtocolEntry setProtocolEntry310,311
+endProtocolEntry endProtocolEntry314,315
+endProtocolEntry endProtocolEntry315,316
+getProtocolEntries getProtocolEntries319,320
+getProtocolEntries getProtocolEntries320,321
+data HostEntry HostEntry328,329
+  HostEntry HostEntry329,330
+     hostName hostName330,331
+     hostAliases hostAliases331,332
+     hostFamily hostFamily332,333
+     hostAddresses hostAddresses333,334
+hostAddress hostAddress365,366
+hostAddress hostAddress366,367
+getHostByName getHostByName375,376
+getHostByName getHostByName376,377
+getHostByAddr getHostByAddr389,390
+getHostByAddr getHostByAddr390,391
+getHostEntry getHostEntry400,401
+getHostEntry getHostEntry401,402
+setHostEntry setHostEntry408,409
+setHostEntry setHostEntry409,410
+endHostEntry endHostEntry413,414
+endHostEntry endHostEntry414,415
+getHostEntries getHostEntries418,419
+getHostEntries getHostEntries419,420
+type NetworkAddr NetworkAddr431,432
+type NetworkName NetworkName433,434
+data NetworkEntry NetworkEntry435,436
+  NetworkEntry NetworkEntry436,437
+     networkName networkName437,438
+     networkAliases networkAliases438,439
+     networkFamily networkFamily439,440
+     networkAddress networkAddress440,441
+getNetworkByName getNetworkByName466,467
+getNetworkByName getNetworkByName467,468
+getNetworkByAddr getNetworkByAddr476,477
+getNetworkByAddr getNetworkByAddr477,478
+getNetworkEntry getNetworkEntry485,486
+getNetworkEntry getNetworkEntry486,487
+setNetworkEntry setNetworkEntry496,497
+setNetworkEntry setNetworkEntry497,498
+endNetworkEntry endNetworkEntry502,503
+endNetworkEntry endNetworkEntry503,504
+getNetworkEntries getNetworkEntries508,509
+getNetworkEntries getNetworkEntries509,510
+ifNameToIndex ifNameToIndex520,521
+ifNameToIndex ifNameToIndex521,522
+lock lock535,536
+lock lock536,537
+withLock withLock538,539
+withLock withLock539,540
+getHostName getHostName547,548
+getHostName getHostName548,549
+getEntries getEntries560,561
+getEntries getEntries563,564
+throwNoSuchThingIfNull throwNoSuchThingIfNull573,574
+throwNoSuchThingIfNull throwNoSuchThingIfNull574,575
+
+./network-2.6.2.1/tests/Regression.hs,172
+module Main Main1,2
+testGetAddrInfo testGetAddrInfo12,13
+testGetAddrInfo testGetAddrInfo13,14
+tests tests21,22
+tests tests22,23
+main main29,30
+main main30,31
+
+./network-2.6.2.1/tests/Simple.hs,1504
+module Main Main2,3
+import import30,31
+serverAddr serverAddr34,35
+serverAddr serverAddr35,36
+testMsg testMsg37,38
+testMsg testMsg38,39
+testSend testSend46,47
+testSend testSend47,48
+testSendAll testSendAll52,53
+testSendAll testSendAll53,54
+testSendTo testSendTo58,59
+testSendTo testSendTo59,60
+testSendAllTo testSendAllTo66,67
+testSendAllTo testSendAllTo67,68
+testSendMany testSendMany74,75
+testSendMany testSendMany75,76
+testSendManyTo testSendManyTo83,84
+testSendManyTo testSendManyTo84,85
+testRecv testRecv94,95
+testRecv testRecv95,96
+testOverFlowRecv testOverFlowRecv100,101
+testOverFlowRecv testOverFlowRecv101,102
+testRecvFrom testRecvFrom110,111
+testRecvFrom testRecvFrom111,112
+testOverFlowRecvFrom testOverFlowRecvFrom121,122
+testOverFlowRecvFrom testOverFlowRecvFrom122,123
+testUserTimeout testUserTimeout131,132
+testUserTimeout testUserTimeout132,133
+canTestMsg canTestMsg203,204
+testCanSend testCanSend209,210
+testCanSend testCanSend210,211
+canTest canTest215,216
+canTest canTest216,217
+basicTests basicTests235,236
+basicTests basicTests236,237
+tests tests257,258
+tests tests258,259
+getPeerPort getPeerPort265,266
+getPeerPort getPeerPort266,267
+tcpTest tcpTest278,279
+tcpTest tcpTest279,280
+udpTest udpTest307,308
+udpTest udpTest308,309
+test test330,331
+test test331,332
+bracketWithReraise bracketWithReraise355,356
+bracketWithReraise bracketWithReraise356,357
+main main363,364
+main main364,365
+
+./network-2.6.2.1/Setup.hs,52
+module Main Main0,1
+main main4,5
+main main5,6
+
+./network-2.6.2.1/Network.hs,847
+module NetworkNetwork26,27
+data PortID PortID82,83
+          Service Service83,84
+        | PortNumber PortNumber84,85
+        | UnixSocket UnixSocket86,87
+connectTo connectTo95,96
+connectTo connectTo102,103
+connect' connect'144,145
+connect' connect'146,147
+listenOn listenOn180,181
+listenOn listenOn186,187
+listen' listen'232,233
+listen' listen'234,235
+accept accept269,270
+accept accept276,277
+sClose sClose316,317
+sClose sClose317,318
+sendTo sendTo332,333
+sendTo sendTo336,337
+recvFrom recvFrom341,342
+recvFrom recvFrom346,347
+socketPort socketPort394,395
+socketPort socketPort395,396
+bracketOnError bracketOnError419,420
+catchIO catchIO456,457
+catchIO catchIO458,459
+tryIO tryIO464,465
+tryIO tryIO465,466
+firstSuccessful firstSuccessful473,474
+firstSuccessful firstSuccessful474,475
+
+./unix-2.7.1.0/Setup.hs,52
+module Main Main0,1
+main main4,5
+main main5,6
+
+./unix-2.7.1.0/System/Posix/Process/Common.hsc,2721
+module System.Posix.Process.Common System.Posix.Process.Common19,20
+getProcessID getProcessID98,99
+getProcessID getProcessID99,100
+getParentProcessID getParentProcessID106,107
+getParentProcessID getParentProcessID107,108
+getProcessGroupID getProcessGroupID114,115
+getProcessGroupID getProcessGroupID115,116
+getProcessGroupIDOf getProcessGroupIDOf122,123
+getProcessGroupIDOf getProcessGroupIDOf123,124
+createProcessGroupFor createProcessGroupFor144,145
+createProcessGroupFor createProcessGroupFor145,146
+joinProcessGroup joinProcessGroup151,152
+joinProcessGroup joinProcessGroup152,153
+setProcessGroupIDOf setProcessGroupIDOf168,169
+setProcessGroupIDOf setProcessGroupIDOf169,170
+createSession createSession177,178
+createSession createSession178,179
+data ProcessTimesProcessTimes188,189
+  = ProcessTimes ProcessTimes189,190
+  = ProcessTimes { elapsedTime elapsedTime189,190
+                 , userTime userTime190,191
+                 , systemTime systemTime191,192
+                 , childUserTime childUserTime192,193
+                 , childSystemTime childSystemTime193,194
+getProcessTimes getProcessTimes198,199
+getProcessTimes getProcessTimes199,200
+type CTms CTms213,214
+nice nice221,222
+nice nice222,223
+getProcessPriority getProcessPriority232,233
+getProcessGroupPriority getProcessGroupPriority233,234
+getUserPriority getUserPriority234,235
+getProcessPriority getProcessPriority236,237
+getProcessGroupPriority getProcessGroupPriority241,242
+getUserPriority getUserPriority246,247
+setProcessPriority setProcessPriority254,255
+setProcessGroupPriority setProcessGroupPriority255,256
+setUserPriority setUserPriority256,257
+setProcessPriority setProcessPriority258,259
+setProcessGroupPriority setProcessGroupPriority262,263
+setUserPriority setUserPriority266,267
+forkProcess forkProcess292,293
+forkProcess forkProcess293,294
+forkProcessWithUnmask forkProcessWithUnmask313,314
+forkProcessWithUnmask forkProcessWithUnmask314,315
+getProcessStatus getProcessStatus327,328
+getProcessStatus getProcessStatus328,329
+getGroupProcessStatus getGroupProcessStatus351,352
+getGroupProcessStatus getGroupProcessStatus355,356
+getAnyProcessStatus getAnyProcessStatus374,375
+getAnyProcessStatus getAnyProcessStatus375,376
+waitOptions waitOptions377,378
+waitOptions waitOptions379,380
+readWaitStatus readWaitStatus386,387
+readWaitStatus readWaitStatus387,388
+exitImmediately exitImmediately397,398
+exitImmediately exitImmediately398,399
+createProcessGroup createProcessGroup415,416
+createProcessGroup createProcessGroup416,417
+setProcessGroupID setProcessGroupID426,427
+setProcessGroupID setProcessGroupID427,428
+
+./unix-2.7.1.0/System/Posix/Process/Internals.hs,291
+module System.Posix.Process.Internals System.Posix.Process.Internals5,6
+data ProcessStatusProcessStatus16,17
+   = Exited Exited17,18
+   | Terminated Terminated19,20
+   | Stopped Stopped24,25
+decipherWaitStatus decipherWaitStatus35,36
+decipherWaitStatus decipherWaitStatus36,37
+
+./unix-2.7.1.0/System/Posix/Process/ByteString.hsc,144
+module System.Posix.Process.ByteString System.Posix.Process.ByteString21,22
+executeFile executeFile104,105
+executeFile executeFile109,110
+
+./unix-2.7.1.0/System/Posix/Temp.hsc,242
+module System.Posix.Temp System.Posix.Temp20,21
+mkstemp mkstemp47,48
+mkstemp mkstemp48,49
+mkstemps mkstemps76,77
+mkstemps mkstemps78,79
+mkdtemp mkdtemp102,103
+mkdtemp mkdtemp103,104
+mktemp mktemp124,125
+mktemp mktemp125,126
+
+./unix-2.7.1.0/System/Posix/Temp/ByteString.hsc,264
+module System.Posix.Temp.ByteString System.Posix.Temp.ByteString20,21
+mkstemp mkstemp52,53
+mkstemp mkstemp53,54
+mkstemps mkstemps77,78
+mkstemps mkstemps79,80
+mkdtemp mkdtemp102,103
+mkdtemp mkdtemp103,104
+mktemp mktemp124,125
+mktemp mktemp125,126
+
+./unix-2.7.1.0/System/Posix/Process.hsc,118
+module System.Posix.Process System.Posix.Process20,21
+executeFile executeFile92,93
+executeFile executeFile97,98
+
+./unix-2.7.1.0/System/Posix/Time.hsc,104
+module System.Posix.Time System.Posix.Time19,20
+epochTime epochTime36,37
+epochTime epochTime37,38
+
+./unix-2.7.1.0/System/Posix/Semaphore.hsc,822
+module System.Posix.SemaphoreSystem.Posix.Semaphore19,20
+data OpenSemFlags OpenSemFlags38,39
+data OpenSemFlags = OpenSemFlags OpenSemFlags38,39
+data OpenSemFlags = OpenSemFlags { semCreate semCreate38,39
+                                   semExclusive semExclusive41,42
+newtype Semaphore Semaphore46,47
+newtype Semaphore = Semaphore Semaphore46,47
+semOpen semOpen50,51
+semOpen semOpen51,52
+semUnlink semUnlink64,65
+semUnlink semUnlink65,66
+semWait semWait73,74
+semWait semWait74,75
+semTryWait semTryWait80,81
+semTryWait semTryWait81,82
+semThreadWait semThreadWait94,95
+semThreadWait semThreadWait95,96
+semPost semPost100,101
+semPost semPost101,102
+semGetValue semGetValue106,107
+semGetValue semGetValue107,108
+semGetValue_ semGetValue_110,111
+semGetValue_ semGetValue_111,112
+
+./unix-2.7.1.0/System/Posix/SharedMem.hsc,391
+module System.Posix.SharedMemSystem.Posix.SharedMem19,20
+data ShmOpenFlags ShmOpenFlags37,38
+data ShmOpenFlags = ShmOpenFlagsShmOpenFlags37,38
+    { shmReadWrite shmReadWrite38,39
+      shmCreate shmCreate40,41
+      shmExclusive shmExclusive42,43
+      shmTrunc shmTrunc44,45
+shmOpen shmOpen49,50
+shmOpen shmOpen51,52
+shmUnlink shmUnlink73,74
+shmUnlink shmUnlink75,76
+
+./unix-2.7.1.0/System/Posix/Files/Common.hsc,5348
+module System.Posix.Files.Common System.Posix.Files.Common29,30
+nullFileMode nullFileMode111,112
+nullFileMode nullFileMode112,113
+ownerReadMode ownerReadMode115,116
+ownerReadMode ownerReadMode116,117
+ownerWriteMode ownerWriteMode119,120
+ownerWriteMode ownerWriteMode120,121
+ownerExecuteMode ownerExecuteMode123,124
+ownerExecuteMode ownerExecuteMode124,125
+groupReadMode groupReadMode127,128
+groupReadMode groupReadMode128,129
+groupWriteMode groupWriteMode131,132
+groupWriteMode groupWriteMode132,133
+groupExecuteMode groupExecuteMode135,136
+groupExecuteMode groupExecuteMode136,137
+otherReadMode otherReadMode139,140
+otherReadMode otherReadMode140,141
+otherWriteMode otherWriteMode143,144
+otherWriteMode otherWriteMode144,145
+otherExecuteMode otherExecuteMode147,148
+otherExecuteMode otherExecuteMode148,149
+setUserIDMode setUserIDMode151,152
+setUserIDMode setUserIDMode152,153
+setGroupIDMode setGroupIDMode155,156
+setGroupIDMode setGroupIDMode156,157
+stdFileMode stdFileMode159,160
+stdFileMode stdFileMode160,161
+ownerModes ownerModes165,166
+ownerModes ownerModes166,167
+groupModes groupModes169,170
+groupModes groupModes170,171
+otherModes otherModes173,174
+otherModes otherModes174,175
+accessModes accessModes177,178
+accessModes accessModes178,179
+unionFileModes unionFileModes182,183
+unionFileModes unionFileModes183,184
+intersectFileModes intersectFileModes187,188
+intersectFileModes intersectFileModes188,189
+fileTypeModes fileTypeModes190,191
+fileTypeModes fileTypeModes191,192
+blockSpecialMode blockSpecialMode193,194
+blockSpecialMode blockSpecialMode194,195
+characterSpecialMode characterSpecialMode196,197
+characterSpecialMode characterSpecialMode197,198
+namedPipeMode namedPipeMode199,200
+namedPipeMode namedPipeMode200,201
+regularFileMode regularFileMode202,203
+regularFileMode regularFileMode203,204
+directoryMode directoryMode205,206
+directoryMode directoryMode206,207
+symbolicLinkMode symbolicLinkMode208,209
+symbolicLinkMode symbolicLinkMode209,210
+socketMode socketMode211,212
+socketMode socketMode212,213
+setFdMode setFdMode218,219
+setFdMode setFdMode219,220
+setFileCreationMask setFileCreationMask230,231
+setFileCreationMask setFileCreationMask231,232
+newtype FileStatus FileStatus241,242
+newtype FileStatus = FileStatus FileStatus241,242
+deviceID deviceID244,245
+fileID fileID246,247
+fileMode fileMode248,249
+linkCount linkCount250,251
+fileOwner fileOwner252,253
+fileGroup fileGroup254,255
+specialDeviceID specialDeviceID256,257
+fileSize fileSize259,260
+accessTime accessTime261,262
+accessTimeHiRes accessTimeHiRes263,264
+modificationTime modificationTime265,266
+modificationTimeHiRes modificationTimeHiRes267,268
+statusChangeTime statusChangeTime269,270
+statusChangeTimeHiRes statusChangeTimeHiRes271,272
+deviceID deviceID273,274
+fileID fileID275,276
+fileMode fileMode277,278
+linkCount linkCount279,280
+fileOwner fileOwner281,282
+fileGroup fileGroup283,284
+specialDeviceID specialDeviceID285,286
+fileSize fileSize287,288
+accessTime accessTime289,290
+modificationTime modificationTime291,292
+statusChangeTime statusChangeTime293,294
+accessTimeHiRes accessTimeHiRes296,297
+modificationTimeHiRes modificationTimeHiRes319,320
+statusChangeTimeHiRes statusChangeTimeHiRes342,343
+isBlockDevice isBlockDevice366,367
+isCharacterDevice isCharacterDevice368,369
+isNamedPipe isNamedPipe370,371
+isRegularFile isRegularFile372,373
+isDirectory isDirectory374,375
+isSymbolicLink isSymbolicLink376,377
+isSocket isSocket378,379
+isBlockDevice isBlockDevice380,381
+isCharacterDevice isCharacterDevice382,383
+isNamedPipe isNamedPipe384,385
+isRegularFile isRegularFile386,387
+isDirectory isDirectory388,389
+isSymbolicLink isSymbolicLink390,391
+isSocket isSocket392,393
+getFdStatus getFdStatus398,399
+getFdStatus getFdStatus399,400
+data CTimeSpec CTimeSpec409,410
+data CTimeSpec = CTimeSpec CTimeSpec409,410
+instance instance411,412
+toCTimeSpec toCTimeSpec422,423
+toCTimeSpec toCTimeSpec423,424
+data CTimeVal CTimeVal439,440
+data CTimeVal = CTimeVal CTimeVal439,440
+toCTimeVal toCTimeVal452,453
+toCTimeVal toCTimeVal453,454
+setFdTimesHiRes setFdTimesHiRes478,479
+setFdTimesHiRes setFdTimesHiRes480,481
+touchFd touchFd499,500
+touchFd touchFd501,502
+setFdOwnerAndGroup setFdOwnerAndGroup515,516
+setFdOwnerAndGroup setFdOwnerAndGroup516,517
+setFdSize setFdSize528,529
+setFdSize setFdSize529,530
+data PathVarPathVar535,536
+  = FileSizeBits FileSizeBits536,537
+  | LinkLimit LinkLimit537,538
+  | InputLineLimit InputLineLimit538,539
+  | InputQueueLimit InputQueueLimit539,540
+  | FileNameLimit FileNameLimit540,541
+  | PathNameLimit PathNameLimit541,542
+  | PipeBufferLimit PipeBufferLimit542,543
+  | SymbolicLinkLimit SymbolicLinkLimit549,550
+  | SetOwnerAndGroupIsRestricted SetOwnerAndGroupIsRestricted550,551
+  | FileNamesAreNotTruncated FileNamesAreNotTruncated551,552
+  | VDisableChar VDisableChar552,553
+  | AsyncIOAvailable AsyncIOAvailable553,554
+  | PrioIOAvailable PrioIOAvailable554,555
+  | SyncIOAvailable SyncIOAvailable555,556
+pathVarConst pathVarConst557,558
+pathVarConst pathVarConst558,559
+getFdPathVar getFdPathVar606,607
+getFdPathVar getFdPathVar607,608
+
+./unix-2.7.1.0/System/Posix/Files/ByteString.hsc,1766
+module System.Posix.Files.ByteString System.Posix.Files.ByteString33,34
+setFileMode setFileMode121,122
+setFileMode setFileMode122,123
+fileAccess fileAccess135,136
+fileAccess fileAccess136,137
+fileExist fileExist146,147
+fileExist fileExist147,148
+access access157,158
+access access158,159
+getFileStatus getFileStatus174,175
+getFileStatus getFileStatus175,176
+getSymbolicLinkStatus getSymbolicLinkStatus187,188
+getSymbolicLinkStatus getSymbolicLinkStatus188,189
+createNamedPipe createNamedPipe205,206
+createNamedPipe createNamedPipe206,207
+createDevice createDevice218,219
+createDevice createDevice219,220
+createLink createLink233,234
+createLink createLink234,235
+removeLink removeLink242,243
+removeLink removeLink243,244
+createSymbolicLink createSymbolicLink257,258
+createSymbolicLink createSymbolicLink258,259
+readSymbolicLink readSymbolicLink278,279
+readSymbolicLink readSymbolicLink279,280
+rename rename295,296
+rename rename296,297
+setOwnerAndGroup setOwnerAndGroup313,314
+setOwnerAndGroup setOwnerAndGroup314,315
+setSymbolicLinkOwnerAndGroup setSymbolicLinkOwnerAndGroup326,327
+setSymbolicLinkOwnerAndGroup setSymbolicLinkOwnerAndGroup327,328
+setFileTimes setFileTimes343,344
+setFileTimes setFileTimes344,345
+setFileTimesHiRes setFileTimesHiRes354,355
+setFileTimesHiRes setFileTimesHiRes356,357
+setSymbolicLinkTimesHiRes setSymbolicLinkTimesHiRes373,374
+setSymbolicLinkTimesHiRes setSymbolicLinkTimesHiRes375,376
+touchFile touchFile395,396
+touchFile touchFile396,397
+touchSymbolicLink touchSymbolicLink405,406
+touchSymbolicLink touchSymbolicLink407,408
+setFileSize setFileSize422,423
+setFileSize setFileSize423,424
+getPathVar getPathVar440,441
+getPathVar getPathVar441,442
+
+./unix-2.7.1.0/System/Posix/IO/Common.hsc,2601
+module System.Posix.IO.Common System.Posix.IO.Common19,20
+createPipe createPipe97,98
+createPipe createPipe98,99
+dup dup112,113
+dup dup113,114
+dupTo dupTo116,117
+dupTo dupTo117,118
+stdInput, stdOutput, stdError stdError130,131
+stdInput, stdOutput,stdOutput130,131
+stdInput,stdInput130,131
+stdInput stdInput131,132
+stdOutput stdOutput132,133
+stdError stdError133,134
+data OpenMode OpenMode135,136
+data OpenMode = ReadOnly ReadOnly135,136
+data OpenMode = ReadOnly | WriteOnly WriteOnly135,136
+data OpenMode = ReadOnly | WriteOnly | ReadWriteReadWrite135,136
+data OpenFileFlags OpenFileFlags138,139
+ OpenFileFlags OpenFileFlags139,140
+    append append140,141
+    exclusive exclusive141,142
+    noctty noctty142,143
+    nonBlock nonBlock143,144
+    trunc trunc144,145
+defaultFileFlags defaultFileFlags150,151
+defaultFileFlags defaultFileFlags151,152
+open_ open_163,164
+open_ open_168,169
+closeFd closeFd197,198
+closeFd closeFd198,199
+handleToFd handleToFd208,209
+fdToHandle fdToHandle212,213
+handleToFd handleToFd215,216
+handleToFd' handleToFd'224,225
+handleToFd' handleToFd'225,226
+fdToHandle fdToHandle238,239
+data FdOption FdOption254,255
+data FdOption = AppendOnWrite AppendOnWrite254,255
+              | CloseOnExec CloseOnExec255,256
+              | NonBlockingRead NonBlockingRead256,257
+              | SynchronousWrites SynchronousWrites257,258
+fdOption2Int fdOption2Int259,260
+fdOption2Int fdOption2Int260,261
+queryFdOption queryFdOption266,267
+queryFdOption queryFdOption267,268
+setFdOption setFdOption276,277
+setFdOption setFdOption277,278
+mode2Int mode2Int292,293
+mode2Int mode2Int293,294
+fdSeek fdSeek298,299
+fdSeek fdSeek299,300
+data LockRequest LockRequest305,306
+data LockRequest = ReadLockReadLock305,306
+                 | WriteLockWriteLock306,307
+                 | UnlockUnlock307,308
+type FileLock FileLock309,310
+getLock getLock312,313
+getLock getLock313,314
+type CFLock CFLock322,323
+allocaLock allocaLock324,325
+allocaLock allocaLock325,326
+lockReq2Int lockReq2Int333,334
+lockReq2Int lockReq2Int334,335
+bytes2ProcessIDAndLock bytes2ProcessIDAndLock338,339
+bytes2ProcessIDAndLock bytes2ProcessIDAndLock339,340
+setLock setLock360,361
+setLock setLock361,362
+waitToSetLock waitToSetLock366,367
+waitToSetLock waitToSetLock367,368
+fdRead fdRead378,379
+fdRead fdRead381,382
+fdReadBuf fdReadBuf393,394
+fdReadBuf fdReadBuf397,398
+fdWrite fdWrite407,408
+fdWrite fdWrite408,409
+fdWriteBuf fdWriteBuf414,415
+fdWriteBuf fdWriteBuf418,419
+
+./unix-2.7.1.0/System/Posix/IO/ByteString.hsc,168
+module System.Posix.IO.ByteString System.Posix.IO.ByteString24,25
+openFd openFd76,77
+openFd openFd81,82
+createFile createFile90,91
+createFile createFile91,92
+
+./unix-2.7.1.0/System/Posix/Signals.hsc,6461
+module System.Posix.Signals System.Posix.Signals26,27
+nullSignal nullSignal127,128
+nullSignal nullSignal128,129
+sigABRT sigABRT130,131
+sigABRT sigABRT131,132
+sigALRM sigALRM132,133
+sigALRM sigALRM133,134
+sigBUS sigBUS134,135
+sigBUS sigBUS135,136
+sigCHLD sigCHLD136,137
+sigCHLD sigCHLD137,138
+sigCONT sigCONT138,139
+sigCONT sigCONT139,140
+sigFPE sigFPE140,141
+sigFPE sigFPE141,142
+sigHUP sigHUP142,143
+sigHUP sigHUP143,144
+sigILL sigILL144,145
+sigILL sigILL145,146
+sigINT sigINT146,147
+sigINT sigINT147,148
+sigKILL sigKILL148,149
+sigKILL sigKILL149,150
+sigPIPE sigPIPE150,151
+sigPIPE sigPIPE151,152
+sigQUIT sigQUIT152,153
+sigQUIT sigQUIT153,154
+sigSEGV sigSEGV154,155
+sigSEGV sigSEGV155,156
+sigSTOP sigSTOP156,157
+sigSTOP sigSTOP157,158
+sigTERM sigTERM158,159
+sigTERM sigTERM159,160
+sigTSTP sigTSTP160,161
+sigTSTP sigTSTP161,162
+sigTTIN sigTTIN162,163
+sigTTIN sigTTIN163,164
+sigTTOU sigTTOU164,165
+sigTTOU sigTTOU165,166
+sigUSR1 sigUSR1166,167
+sigUSR1 sigUSR1167,168
+sigUSR2 sigUSR2168,169
+sigUSR2 sigUSR2169,170
+sigPOLL sigPOLL171,172
+sigPOLL sigPOLL172,173
+sigPROF sigPROF174,175
+sigPROF sigPROF175,176
+sigSYS sigSYS176,177
+sigSYS sigSYS177,178
+sigTRAP sigTRAP178,179
+sigTRAP sigTRAP179,180
+sigURG sigURG180,181
+sigURG sigURG181,182
+sigVTALRM sigVTALRM182,183
+sigVTALRM sigVTALRM183,184
+sigXCPU sigXCPU184,185
+sigXCPU sigXCPU185,186
+sigXFSZ sigXFSZ186,187
+sigXFSZ sigXFSZ187,188
+internalAbort internalAbort189,190
+internalAbort internalAbort190,191
+realTimeAlarm realTimeAlarm192,193
+realTimeAlarm realTimeAlarm193,194
+busError busError195,196
+busError busError196,197
+processStatusChanged processStatusChanged198,199
+processStatusChanged processStatusChanged199,200
+continueProcess continueProcess201,202
+continueProcess continueProcess202,203
+floatingPointException floatingPointException204,205
+floatingPointException floatingPointException205,206
+lostConnection lostConnection207,208
+lostConnection lostConnection208,209
+illegalInstruction illegalInstruction210,211
+illegalInstruction illegalInstruction211,212
+keyboardSignal keyboardSignal213,214
+keyboardSignal keyboardSignal214,215
+killProcess killProcess216,217
+killProcess killProcess217,218
+openEndedPipe openEndedPipe219,220
+openEndedPipe openEndedPipe220,221
+keyboardTermination keyboardTermination222,223
+keyboardTermination keyboardTermination223,224
+segmentationViolation segmentationViolation225,226
+segmentationViolation segmentationViolation226,227
+softwareStop softwareStop228,229
+softwareStop softwareStop229,230
+softwareTermination softwareTermination231,232
+softwareTermination softwareTermination232,233
+keyboardStop keyboardStop234,235
+keyboardStop keyboardStop235,236
+backgroundRead backgroundRead237,238
+backgroundRead backgroundRead238,239
+backgroundWrite backgroundWrite240,241
+backgroundWrite backgroundWrite241,242
+userDefinedSignal1 userDefinedSignal1243,244
+userDefinedSignal1 userDefinedSignal1244,245
+userDefinedSignal2 userDefinedSignal2246,247
+userDefinedSignal2 userDefinedSignal2247,248
+pollableEvent pollableEvent250,251
+pollableEvent pollableEvent251,252
+profilingTimerExpired profilingTimerExpired254,255
+profilingTimerExpired profilingTimerExpired255,256
+badSystemCall badSystemCall257,258
+badSystemCall badSystemCall258,259
+breakpointTrap breakpointTrap260,261
+breakpointTrap breakpointTrap261,262
+urgentDataAvailable urgentDataAvailable263,264
+urgentDataAvailable urgentDataAvailable264,265
+virtualTimerExpired virtualTimerExpired266,267
+virtualTimerExpired virtualTimerExpired267,268
+cpuTimeLimitExceeded cpuTimeLimitExceeded269,270
+cpuTimeLimitExceeded cpuTimeLimitExceeded270,271
+fileSizeLimitExceeded fileSizeLimitExceeded272,273
+fileSizeLimitExceeded fileSizeLimitExceeded273,274
+signalProcess signalProcess280,281
+signalProcess signalProcess281,282
+signalProcessGroup signalProcessGroup290,291
+signalProcessGroup signalProcessGroup291,292
+raiseSignal raiseSignal299,300
+raiseSignal raiseSignal300,301
+type Signal Signal311,312
+data Handler Handler315,316
+data Handler = DefaultDefault315,316
+             | IgnoreIgnore316,317
+             | Catch Catch318,319
+             | CatchOnce CatchOnce319,320
+             | CatchInfo CatchInfo320,321
+             | CatchInfoOnce CatchInfoOnce321,322
+data SignalInfo SignalInfo327,328
+data SignalInfo = SignalInfo SignalInfo327,328
+      siginfoSignal siginfoSignal328,329
+      siginfoError siginfoError329,330
+      siginfoSpecific siginfoSpecific330,331
+data SignalSpecificInfoSignalSpecificInfo337,338
+  = NoSignalSpecificInfoNoSignalSpecificInfo338,339
+  | SigChldInfo SigChldInfo339,340
+      siginfoPid siginfoPid340,341
+      siginfoUid siginfoUid341,342
+      siginfoStatus siginfoStatus342,343
+installHandler installHandler354,355
+installHandler installHandler360,361
+getinfo getinfo424,425
+getinfo getinfo425,426
+unmarshalSigInfo unmarshalSigInfo429,430
+unmarshalSigInfo unmarshalSigInfo430,431
+scheduleAlarm scheduleAlarm459,460
+scheduleAlarm scheduleAlarm460,461
+setStoppedChildFlag setStoppedChildFlag475,476
+setStoppedChildFlag setStoppedChildFlag476,477
+queryStoppedChildFlag queryStoppedChildFlag482,483
+queryStoppedChildFlag queryStoppedChildFlag483,484
+newtype SignalSet SignalSet491,492
+newtype SignalSet = SignalSet SignalSet491,492
+emptySignalSet emptySignalSet493,494
+emptySignalSet emptySignalSet494,495
+fullSignalSet fullSignalSet499,500
+fullSignalSet fullSignalSet500,501
+reservedSignals reservedSignals507,508
+reservedSignals reservedSignals508,509
+infixr `addSignal`addSignal512,513
+addSignal addSignal513,514
+deleteSignal deleteSignal522,523
+deleteSignal deleteSignal523,524
+inSignalSet inSignalSet531,532
+inSignalSet inSignalSet532,533
+getSignalMask getSignalMask539,540
+getSignalMask getSignalMask540,541
+sigProcMask sigProcMask546,547
+sigProcMask sigProcMask547,548
+setSignalMask setSignalMask553,554
+setSignalMask setSignalMask554,555
+blockSignals blockSignals559,560
+blockSignals blockSignals560,561
+unblockSignals unblockSignals565,566
+unblockSignals unblockSignals566,567
+getPendingSignals getPendingSignals570,571
+getPendingSignals getPendingSignals571,572
+awaitSignal awaitSignal592,593
+awaitSignal awaitSignal593,594
+
+./unix-2.7.1.0/System/Posix/DynamicLinker/Module.hsc,507
+module System.Posix.DynamicLinker.Module System.Posix.DynamicLinker.Module21,22
+unModule unModule67,68
+unModule unModule68,69
+moduleOpen moduleOpen73,74
+moduleOpen moduleOpen74,75
+moduleSymbol moduleSymbol82,83
+moduleSymbol moduleSymbol83,84
+moduleClose moduleClose87,88
+moduleClose moduleClose88,89
+moduleError moduleError92,93
+moduleError moduleError93,94
+withModule withModule99,100
+withModule withModule104,105
+withModule_ withModule_115,116
+withModule_ withModule_120,121
+
+./unix-2.7.1.0/System/Posix/DynamicLinker/Common.hsc,465
+module System.Posix.DynamicLinker.Common System.Posix.DynamicLinker.Common18,19
+dlclose dlclose58,59
+dlclose dlclose59,60
+dlerror dlerror62,63
+dlerror dlerror63,64
+dlsym dlsym68,69
+dlsym dlsym69,70
+undl undl76,77
+undl undl77,78
+throwDLErrorIf throwDLErrorIf79,80
+throwDLErrorIf throwDLErrorIf80,81
+throwDLErrorIf_ throwDLErrorIf_86,87
+throwDLErrorIf_ throwDLErrorIf_87,88
+newtype Module Module91,92
+newtype Module = Module Module91,92
+
+./unix-2.7.1.0/System/Posix/DynamicLinker/Prim.hsc,746
+module System.Posix.DynamicLinker.Prim System.Posix.DynamicLinker.Prim22,23
+haveRtldNext haveRtldNext57,58
+haveRtldNext haveRtldNext60,61
+haveRtldLocal haveRtldLocal70,71
+haveRtldLocal haveRtldLocal71,72
+data RTLDFlagsRTLDFlags77,78
+  = RTLD_LAZYRTLD_LAZY78,79
+  | RTLD_NOWRTLD_NOW79,80
+  | RTLD_GLOBALRTLD_GLOBAL80,81
+  | RTLD_LOCALRTLD_LOCAL81,82
+packRTLDFlags packRTLDFlags89,90
+packRTLDFlags packRTLDFlags90,91
+packRTLDFlag packRTLDFlag92,93
+packRTLDFlag packRTLDFlag93,94
+data DL DL106,107
+data DL = Null Null106,107
+data DL = Null | Next Next106,107
+data DL = Null | Next | Default Default106,107
+data DL = Null | Next | Default | DLHandle DLHandle106,107
+packDL packDL108,109
+packDL packDL109,110
+
+./unix-2.7.1.0/System/Posix/DynamicLinker/Module/ByteString.hsc,162
+module System.Posix.DynamicLinker.Module.ByteString System.Posix.DynamicLinker.Module.ByteString22,23
+moduleOpen moduleOpen73,74
+moduleOpen moduleOpen74,75
+
+./unix-2.7.1.0/System/Posix/DynamicLinker/ByteString.hsc,220
+module System.Posix.DynamicLinker.ByteString System.Posix.DynamicLinker.ByteString19,20
+dlopen dlopen63,64
+dlopen dlopen64,65
+withDL withDL68,69
+withDL withDL69,70
+withDL_ withDL_71,72
+withDL_ withDL_72,73
+
+./unix-2.7.1.0/System/Posix/Env/ByteString.hsc,604
+module System.Posix.Env.ByteString System.Posix.Env.ByteString21,22
+getEnv getEnv48,49
+getEnv getEnv49,50
+getEnvDefault getEnvDefault59,60
+getEnvDefault getEnvDefault60,61
+getEnvironmentPrim getEnvironmentPrim65,66
+getEnvironmentPrim getEnvironmentPrim66,67
+getCEnviron getCEnviron71,72
+getCEnviron getCEnviron75,76
+getEnvironment getEnvironment89,90
+getEnvironment getEnvironment90,91
+unsetEnv unsetEnv101,102
+unsetEnv unsetEnv104,105
+putEnv putEnv116,117
+putEnv putEnv117,118
+setEnv setEnv130,131
+setEnv setEnv132,133
+getArgs getArgs157,158
+getArgs getArgs158,159
+
+./unix-2.7.1.0/System/Posix/DynamicLinker.hsc,198
+module System.Posix.DynamicLinker System.Posix.DynamicLinker18,19
+dlopen dlopen62,63
+dlopen dlopen63,64
+withDL withDL67,68
+withDL withDL68,69
+withDL_ withDL_70,71
+withDL_ withDL_71,72
+
+./unix-2.7.1.0/System/Posix/Resource.hsc,1120
+module System.Posix.Resource System.Posix.Resource19,20
+data ResourceResource35,36
+  = ResourceCoreFileSizeResourceCoreFileSize36,37
+  | ResourceCPUTimeResourceCPUTime37,38
+  | ResourceDataSizeResourceDataSize38,39
+  | ResourceFileSizeResourceFileSize39,40
+  | ResourceOpenFilesResourceOpenFiles40,41
+  | ResourceStackSizeResourceStackSize41,42
+  | ResourceTotalMemoryResourceTotalMemory43,44
+data ResourceLimitsResourceLimits47,48
+  = ResourceLimits ResourceLimits48,49
+  = ResourceLimits { softLimit, hardLimit hardLimit48,49
+data ResourceLimitResourceLimit51,52
+  = ResourceLimitInfinityResourceLimitInfinity52,53
+  | ResourceLimitUnknownResourceLimitUnknown53,54
+  | ResourceLimit ResourceLimit54,55
+type RLimit RLimit57,58
+getResourceLimit getResourceLimit65,66
+getResourceLimit getResourceLimit66,67
+setResourceLimit setResourceLimit77,78
+setResourceLimit setResourceLimit78,79
+packResource packResource86,87
+packResource packResource87,88
+unpackRLimit unpackRLimit97,98
+unpackRLimit unpackRLimit98,99
+packRLimit packRLimit110,111
+packRLimit packRLimit111,112
+
+./unix-2.7.1.0/System/Posix/Env.hsc,664
+module System.Posix.Env System.Posix.Env19,20
+getEnv getEnv51,52
+getEnv getEnv52,53
+getEnvDefault getEnvDefault62,63
+getEnvDefault getEnvDefault63,64
+getEnvironmentPrim getEnvironmentPrim68,69
+getEnvironmentPrim getEnvironmentPrim69,70
+getCEnviron getCEnviron78,79
+getCEnviron getCEnviron83,84
+getEnvironment getEnvironment97,98
+getEnvironment getEnvironment98,99
+setEnvironment setEnvironment108,109
+setEnvironment setEnvironment109,110
+unsetEnv unsetEnv117,118
+unsetEnv unsetEnv120,121
+putEnv putEnv132,133
+putEnv putEnv133,134
+setEnv setEnv154,155
+setEnv setEnv156,157
+clearEnv clearEnv174,175
+clearEnv clearEnv176,177
+
+./unix-2.7.1.0/System/Posix/Fcntl.hsc,493
+module System.Posix.Fcntl System.Posix.Fcntl23,24
+data AdviceAdvice47,48
+  = AdviceNormalAdviceNormal48,49
+  | AdviceRandomAdviceRandom49,50
+  | AdviceSequentialAdviceSequential50,51
+  | AdviceWillNeedAdviceWillNeed51,52
+  | AdviceDontNeedAdviceDontNeed52,53
+  | AdviceNoReuseAdviceNoReuse53,54
+fileAdvise fileAdvise64,65
+fileAdvise fileAdvise66,67
+packAdvice packAdvice72,73
+packAdvice packAdvice73,74
+fileAllocate fileAllocate91,92
+fileAllocate fileAllocate93,94
+
+./unix-2.7.1.0/System/Posix/ByteString.hs,62
+module System.Posix.ByteString System.Posix.ByteString29,30
+
+./unix-2.7.1.0/System/Posix/User.hsc,2635
+module System.Posix.User System.Posix.User17,18
+getRealUserID getRealUserID73,74
+getRealUserID getRealUserID74,75
+getRealGroupID getRealGroupID81,82
+getRealGroupID getRealGroupID82,83
+getEffectiveUserID getEffectiveUserID89,90
+getEffectiveUserID getEffectiveUserID90,91
+getEffectiveGroupID getEffectiveGroupID97,98
+getEffectiveGroupID getEffectiveGroupID98,99
+getGroups getGroups105,106
+getGroups getGroups106,107
+setGroups setGroups119,120
+setGroups setGroups120,121
+getLoginName getLoginName131,132
+getLoginName getLoginName132,133
+setUserID setUserID142,143
+setUserID setUserID143,144
+setEffectiveUserID setEffectiveUserID151,152
+setEffectiveUserID setEffectiveUserID152,153
+setGroupID setGroupID159,160
+setGroupID setGroupID160,161
+setEffectiveGroupID setEffectiveGroupID168,169
+setEffectiveGroupID setEffectiveGroupID169,170
+getEffectiveUserName getEffectiveUserName181,182
+getEffectiveUserName getEffectiveUserName182,183
+data GroupEntry GroupEntry190,191
+ GroupEntry GroupEntry191,192
+  groupName groupName192,193
+  groupPassword groupPassword193,194
+  groupID groupID194,195
+  groupMembers groupMembers195,196
+getGroupEntryForID getGroupEntryForID202,203
+getGroupEntryForID getGroupEntryForID204,205
+getGroupEntryForName getGroupEntryForName220,221
+getGroupEntryForName getGroupEntryForName222,223
+getAllGroupEntries getAllGroupEntries243,244
+getAllGroupEntries getAllGroupEntries245,246
+grBufSize grBufSize267,268
+grBufSize grBufSize269,270
+unpackGroupEntry unpackGroupEntry275,276
+unpackGroupEntry unpackGroupEntry276,277
+data UserEntry UserEntry287,288
+ UserEntry UserEntry288,289
+   userName userName289,290
+   userPassword userPassword290,291
+   userID userID291,292
+   userGroupID userGroupID292,293
+   userGecos userGecos293,294
+   homeDirectory homeDirectory294,295
+   userShell userShell295,296
+lock lock306,307
+lock lock307,308
+getUserEntryForID getUserEntryForID315,316
+getUserEntryForID getUserEntryForID317,318
+getUserEntryForName getUserEntryForName341,342
+getUserEntryForName getUserEntryForName343,344
+getAllUserEntries getAllUserEntries367,368
+getAllUserEntries getAllUserEntries369,370
+pwBufSize pwBufSize391,392
+pwBufSize pwBufSize393,394
+sysconfWithDefault sysconfWithDefault407,408
+sysconfWithDefault sysconfWithDefault408,409
+doubleAllocWhileERANGE doubleAllocWhileERANGE426,427
+unpackUserEntry unpackUserEntry449,450
+unpackUserEntry unpackUserEntry450,451
+throwErrnoIfNullAndError throwErrnoIfNullAndError466,467
+throwErrnoIfNullAndError throwErrnoIfNullAndError467,468
+
+./unix-2.7.1.0/System/Posix/Unistd.hsc,1246
+module System.Posix.Unistd System.Posix.Unistd21,22
+data SystemID SystemID75,76
+  SystemID SystemID76,77
+  SystemID { systemName systemName76,77
+           , nodeName nodeName77,78
+           , release release78,79
+           , version version79,80
+           , machine machine80,81
+getSystemID getSystemID83,84
+getSystemID getSystemID84,85
+sleep sleep116,117
+sleep sleep117,118
+usleep usleep135,136
+usleep usleep137,138
+nanosleep nanosleep158,159
+nanosleep nanosleep160,161
+data CTimeSpecCTimeSpec183,184
+data SysVar SysVar192,193
+data SysVar = ArgumentLimitArgumentLimit192,193
+            | ChildLimitChildLimit193,194
+            | ClockTickClockTick194,195
+            | GroupLimitGroupLimit195,196
+            | OpenFileLimitOpenFileLimit196,197
+            | PosixVersionPosixVersion197,198
+            | HasSavedIDsHasSavedIDs198,199
+            | HasJobControlHasJobControl199,200
+getSysVar getSysVar202,203
+getSysVar getSysVar203,204
+sysconf sysconf214,215
+sysconf sysconf215,216
+fileSynchronise fileSynchronise232,233
+fileSynchronise fileSynchronise234,235
+fileSynchroniseDataOnly fileSynchroniseDataOnly253,254
+fileSynchroniseDataOnly fileSynchroniseDataOnly255,256
+
+./unix-2.7.1.0/System/Posix/Terminal/Common.hsc,5770
+module System.Posix.Terminal.Common System.Posix.Terminal.Common18,19
+type CTermios CTermios83,84
+newtype TerminalAttributes TerminalAttributes84,85
+newtype TerminalAttributes = TerminalAttributes TerminalAttributes84,85
+makeTerminalAttributes makeTerminalAttributes86,87
+makeTerminalAttributes makeTerminalAttributes87,88
+withTerminalAttributes withTerminalAttributes89,90
+withTerminalAttributes withTerminalAttributes90,91
+data TerminalModeTerminalMode93,94
+   = InterruptOnBreak InterruptOnBreak95,96
+   | MapCRtoLF MapCRtoLF96,97
+   | IgnoreBreak IgnoreBreak97,98
+   | IgnoreCR IgnoreCR98,99
+   | IgnoreParityErrors IgnoreParityErrors99,100
+   | MapLFtoCR MapLFtoCR100,101
+   | CheckParity CheckParity101,102
+   | StripHighBit StripHighBit102,103
+   | StartStopInput StartStopInput103,104
+   | StartStopOutput StartStopOutput104,105
+   | MarkParityErrors MarkParityErrors105,106
+   | ProcessOutput ProcessOutput108,109
+   | LocalMode LocalMode115,116
+   | ReadEnable ReadEnable116,117
+   | TwoStopBits TwoStopBits117,118
+   | HangupOnClose HangupOnClose118,119
+   | EnableParity EnableParity119,120
+   | OddParity OddParity120,121
+   | EnableEcho EnableEcho123,124
+   | EchoErase EchoErase124,125
+   | EchoKill EchoKill125,126
+   | EchoLF EchoLF126,127
+   | ProcessInput ProcessInput127,128
+   | ExtendedFunctions ExtendedFunctions128,129
+   | KeyboardInterrupts KeyboardInterrupts129,130
+   | NoFlushOnInterrupt NoFlushOnInterrupt130,131
+   | BackgroundWriteInterrupt BackgroundWriteInterrupt131,132
+withoutMode withoutMode133,134
+withoutMode withoutMode134,135
+withMode withMode162,163
+withMode withMode163,164
+terminalMode terminalMode191,192
+terminalMode terminalMode192,193
+bitsPerByte bitsPerByte220,221
+bitsPerByte bitsPerByte221,222
+withBits withBits234,235
+withBits withBits235,236
+data ControlCharacterControlCharacter248,249
+  = EndOfFile EndOfFile249,250
+  | EndOfLine EndOfLine250,251
+  | Erase Erase251,252
+  | Interrupt Interrupt252,253
+  | Kill Kill253,254
+  | Quit Quit254,255
+  | Start Start255,256
+  | Stop Stop256,257
+  | Suspend Suspend257,258
+controlChar controlChar259,260
+controlChar controlChar260,261
+withCC withCC268,269
+withCC withCC271,272
+withoutCC withoutCC276,277
+withoutCC withoutCC279,280
+inputTime inputTime284,285
+inputTime inputTime285,286
+withTime withTime290,291
+withTime withTime291,292
+minInput minInput296,297
+minInput minInput297,298
+withMinInput withMinInput302,303
+withMinInput withMinInput303,304
+data BaudRateBaudRate308,309
+  = B0B0309,310
+  | B50B50310,311
+  | B75B75311,312
+  | B110B110312,313
+  | B134B134313,314
+  | B150B150314,315
+  | B200B200315,316
+  | B300B300316,317
+  | B600B600317,318
+  | B1200B1200318,319
+  | B1800B1800319,320
+  | B2400B2400320,321
+  | B4800B4800321,322
+  | B9600B9600322,323
+  | B19200B19200323,324
+  | B38400B38400324,325
+  | B57600B57600325,326
+  | B115200B115200326,327
+inputSpeed inputSpeed328,329
+inputSpeed inputSpeed329,330
+withInputSpeed withInputSpeed337,338
+withInputSpeed withInputSpeed338,339
+outputSpeed outputSpeed345,346
+outputSpeed outputSpeed346,347
+withOutputSpeed withOutputSpeed354,355
+withOutputSpeed withOutputSpeed355,356
+getTerminalAttributes getTerminalAttributes363,364
+getTerminalAttributes getTerminalAttributes364,365
+data TerminalStateTerminalState373,374
+  = ImmediatelyImmediately374,375
+  | WhenDrainedWhenDrained375,376
+  | WhenFlushedWhenFlushed376,377
+setTerminalAttributes setTerminalAttributes381,382
+setTerminalAttributes setTerminalAttributes385,386
+sendBreak sendBreak401,402
+sendBreak sendBreak402,403
+drainOutput drainOutput410,411
+drainOutput drainOutput411,412
+data QueueSelectorQueueSelector417,418
+  = InputQueue InputQueue418,419
+  | OutputQueue OutputQueue419,420
+  | BothQueues BothQueues420,421
+discardData discardData425,426
+discardData discardData426,427
+data FlowActionFlowAction437,438
+  = SuspendOutput SuspendOutput438,439
+  | RestartOutput RestartOutput439,440
+  | TransmitStop TransmitStop440,441
+  | TransmitStart TransmitStart441,442
+controlFlow controlFlow446,447
+controlFlow controlFlow447,448
+getTerminalProcessGroupID getTerminalProcessGroupID462,463
+getTerminalProcessGroupID getTerminalProcessGroupID463,464
+setTerminalProcessGroupID setTerminalProcessGroupID473,474
+setTerminalProcessGroupID setTerminalProcessGroupID474,475
+queryTerminal queryTerminal485,486
+queryTerminal queryTerminal486,487
+cc2Word cc2Word499,500
+cc2Word cc2Word500,501
+baud2Word baud2Word512,513
+baud2Word baud2Word513,514
+word2Baud word2Baud535,536
+word2Baud word2Baud536,537
+clearInputFlag clearInputFlag559,560
+clearInputFlag clearInputFlag560,561
+setInputFlag setInputFlag571,572
+setInputFlag setInputFlag572,573
+testInputFlag testInputFlag583,584
+testInputFlag testInputFlag584,585
+clearControlFlag clearControlFlag591,592
+clearControlFlag clearControlFlag592,593
+setControlFlag setControlFlag603,604
+setControlFlag setControlFlag604,605
+testControlFlag testControlFlag615,616
+testControlFlag testControlFlag616,617
+clearLocalFlag clearLocalFlag623,624
+clearLocalFlag clearLocalFlag624,625
+setLocalFlag setLocalFlag635,636
+setLocalFlag setLocalFlag636,637
+testLocalFlag testLocalFlag647,648
+testLocalFlag testLocalFlag648,649
+clearOutputFlag clearOutputFlag655,656
+clearOutputFlag clearOutputFlag656,657
+setOutputFlag setOutputFlag667,668
+setOutputFlag setOutputFlag668,669
+testOutputFlag testOutputFlag679,680
+testOutputFlag testOutputFlag680,681
+withNewTermios withNewTermios685,686
+withNewTermios withNewTermios687,688
+
+./unix-2.7.1.0/System/Posix/Terminal/ByteString.hsc,663
+module System.Posix.Terminal.ByteString System.Posix.Terminal.ByteString19,20
+getTerminalName getTerminalName98,99
+getTerminalName getTerminalName99,100
+getControllingTerminalName getControllingTerminalName111,112
+getControllingTerminalName getControllingTerminalName112,113
+getSlaveTerminalName getSlaveTerminalName122,123
+getSlaveTerminalName getSlaveTerminalName125,126
+openPseudoTerminal openPseudoTerminal142,143
+openPseudoTerminal openPseudoTerminal145,146
+pushModule pushModule173,174
+pushModule pushModule174,175
+c_grantpt c_grantpt189,190
+c_grantpt c_grantpt190,191
+c_unlockpt c_unlockpt192,193
+c_unlockpt c_unlockpt193,194
+
+./unix-2.7.1.0/System/Posix/Files.hsc,1744
+module System.Posix.Files System.Posix.Files33,34
+setFileMode setFileMode116,117
+setFileMode setFileMode117,118
+fileAccess fileAccess129,130
+fileAccess fileAccess130,131
+fileExist fileExist140,141
+fileExist fileExist141,142
+access access151,152
+access access152,153
+getFileStatus getFileStatus168,169
+getFileStatus getFileStatus169,170
+getSymbolicLinkStatus getSymbolicLinkStatus181,182
+getSymbolicLinkStatus getSymbolicLinkStatus182,183
+createNamedPipe createNamedPipe199,200
+createNamedPipe createNamedPipe200,201
+createDevice createDevice212,213
+createDevice createDevice213,214
+createLink createLink227,228
+createLink createLink228,229
+removeLink removeLink236,237
+removeLink removeLink237,238
+createSymbolicLink createSymbolicLink251,252
+createSymbolicLink createSymbolicLink252,253
+readSymbolicLink readSymbolicLink272,273
+readSymbolicLink readSymbolicLink273,274
+rename rename289,290
+rename rename290,291
+setOwnerAndGroup setOwnerAndGroup307,308
+setOwnerAndGroup setOwnerAndGroup308,309
+setSymbolicLinkOwnerAndGroup setSymbolicLinkOwnerAndGroup320,321
+setSymbolicLinkOwnerAndGroup setSymbolicLinkOwnerAndGroup321,322
+setFileTimes setFileTimes337,338
+setFileTimes setFileTimes338,339
+setFileTimesHiRes setFileTimesHiRes350,351
+setFileTimesHiRes setFileTimesHiRes352,353
+setSymbolicLinkTimesHiRes setSymbolicLinkTimesHiRes371,372
+setSymbolicLinkTimesHiRes setSymbolicLinkTimesHiRes373,374
+touchFile touchFile393,394
+touchFile touchFile394,395
+touchSymbolicLink touchSymbolicLink405,406
+touchSymbolicLink touchSymbolicLink407,408
+setFileSize setFileSize422,423
+setFileSize setFileSize423,424
+getPathVar getPathVar440,441
+getPathVar getPathVar441,442
+
+./unix-2.7.1.0/System/Posix/IO.hsc,146
+module System.Posix.IO System.Posix.IO24,25
+openFd openFd76,77
+openFd openFd81,82
+createFile createFile90,91
+createFile createFile91,92
+
+./unix-2.7.1.0/System/Posix/Directory.hsc,568
+module System.Posix.Directory System.Posix.Directory21,22
+createDirectory createDirectory57,58
+createDirectory createDirectory58,59
+openDirStream openDirStream69,70
+openDirStream openDirStream70,71
+readDirStream readDirStream82,83
+readDirStream readDirStream83,84
+getWorkingDirectory getWorkingDirectory117,118
+getWorkingDirectory getWorkingDirectory118,119
+changeWorkingDirectory changeWorkingDirectory142,143
+changeWorkingDirectory changeWorkingDirectory143,144
+removeDirectory removeDirectory151,152
+removeDirectory removeDirectory152,153
+
+./unix-2.7.1.0/System/Posix/Terminal.hsc,640
+module System.Posix.Terminal System.Posix.Terminal19,20
+getTerminalName getTerminalName89,90
+getTerminalName getTerminalName90,91
+getControllingTerminalName getControllingTerminalName102,103
+getControllingTerminalName getControllingTerminalName103,104
+getSlaveTerminalName getSlaveTerminalName113,114
+getSlaveTerminalName getSlaveTerminalName116,117
+openPseudoTerminal openPseudoTerminal133,134
+openPseudoTerminal openPseudoTerminal136,137
+pushModule pushModule164,165
+pushModule pushModule165,166
+c_grantpt c_grantpt180,181
+c_grantpt c_grantpt181,182
+c_unlockpt c_unlockpt183,184
+c_unlockpt c_unlockpt184,185
+
+./unix-2.7.1.0/System/Posix/Error.hs,528
+module System.Posix.Error System.Posix.Error20,21
+throwErrnoPathIfMinus1Retry throwErrnoPathIfMinus1Retry37,38
+throwErrnoPathIfMinus1Retry throwErrnoPathIfMinus1Retry39,40
+throwErrnoPathIfMinus1Retry_ throwErrnoPathIfMinus1Retry_42,43
+throwErrnoPathIfMinus1Retry_ throwErrnoPathIfMinus1Retry_44,45
+throwErrnoPathIfNullRetry throwErrnoPathIfNullRetry47,48
+throwErrnoPathIfNullRetry throwErrnoPathIfNullRetry48,49
+throwErrnoPathIfRetry throwErrnoPathIfRetry51,52
+throwErrnoPathIfRetry throwErrnoPathIfRetry52,53
+
+./unix-2.7.1.0/System/Posix/Directory/Common.hsc,724
+module System.Posix.Directory.Common System.Posix.Directory.Common22,23
+newtype DirStream DirStream39,40
+newtype DirStream = DirStream DirStream39,40
+type CDir CDir41,42
+type CDirent CDirent42,43
+rewindDirStream rewindDirStream46,47
+rewindDirStream rewindDirStream47,48
+closeDirStream closeDirStream54,55
+closeDirStream closeDirStream55,56
+newtype DirStreamOffset DirStreamOffset61,62
+newtype DirStreamOffset = DirStreamOffset DirStreamOffset61,62
+seekDirStream seekDirStream64,65
+seekDirStream seekDirStream65,66
+tellDirStream tellDirStream73,74
+tellDirStream tellDirStream74,75
+changeWorkingDirectoryFd changeWorkingDirectoryFd82,83
+changeWorkingDirectoryFd changeWorkingDirectoryFd83,84
+
+./unix-2.7.1.0/System/Posix/Directory/ByteString.hsc,590
+module System.Posix.Directory.ByteString System.Posix.Directory.ByteString21,22
+createDirectory createDirectory58,59
+createDirectory createDirectory59,60
+openDirStream openDirStream70,71
+openDirStream openDirStream71,72
+readDirStream readDirStream83,84
+readDirStream readDirStream84,85
+getWorkingDirectory getWorkingDirectory118,119
+getWorkingDirectory getWorkingDirectory119,120
+changeWorkingDirectory changeWorkingDirectory143,144
+changeWorkingDirectory changeWorkingDirectory144,145
+removeDirectory removeDirectory152,153
+removeDirectory removeDirectory153,154
+
+./unix-2.7.1.0/System/Posix/Signals/Exts.hsc,282
+module System.Posix.Signals.Exts System.Posix.Signals.Exts26,27
+sigINFO sigINFO37,38
+sigINFO sigINFO38,39
+sigWINCH sigWINCH40,41
+sigWINCH sigWINCH41,42
+infoEvent infoEvent44,45
+infoEvent infoEvent45,46
+windowChange windowChange47,48
+windowChange windowChange48,49
+
+./unix-2.7.1.0/System/Posix/ByteString/FilePath.hsc,1375
+module System.Posix.ByteString.FilePath System.Posix.ByteString.FilePath20,21
+type RawFilePath RawFilePath49,50
+withFilePath withFilePath51,52
+withFilePath withFilePath52,53
+peekFilePath peekFilePath54,55
+peekFilePath peekFilePath55,56
+peekFilePathLen peekFilePathLen57,58
+peekFilePathLen peekFilePathLen58,59
+throwErrnoPathIfMinus1Retry throwErrnoPathIfMinus1Retry61,62
+throwErrnoPathIfMinus1Retry throwErrnoPathIfMinus1Retry63,64
+throwErrnoPathIfMinus1Retry_ throwErrnoPathIfMinus1Retry_66,67
+throwErrnoPathIfMinus1Retry_ throwErrnoPathIfMinus1Retry_68,69
+throwErrnoPathIfNullRetry throwErrnoPathIfNullRetry71,72
+throwErrnoPathIfNullRetry throwErrnoPathIfNullRetry72,73
+throwErrnoPathIfRetry throwErrnoPathIfRetry75,76
+throwErrnoPathIfRetry throwErrnoPathIfRetry76,77
+throwErrnoPath throwErrnoPath89,90
+throwErrnoPath throwErrnoPath90,91
+throwErrnoPathIf throwErrnoPathIf98,99
+throwErrnoPathIf throwErrnoPathIf99,100
+throwErrnoPathIf_ throwErrnoPathIf_107,108
+throwErrnoPathIf_ throwErrnoPathIf_108,109
+throwErrnoPathIfNull throwErrnoPathIfNull113,114
+throwErrnoPathIfNull throwErrnoPathIfNull114,115
+throwErrnoPathIfMinus1 throwErrnoPathIfMinus1119,120
+throwErrnoPathIfMinus1 throwErrnoPathIfMinus1120,121
+throwErrnoPathIfMinus1_ throwErrnoPathIfMinus1_125,126
+throwErrnoPathIfMinus1_ throwErrnoPathIfMinus1_126,127
+
+./unix-2.7.1.0/System/Posix.hs,40
+module System.Posix System.Posix18,19
